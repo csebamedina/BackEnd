@@ -9,10 +9,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @SpringBootApplication
 public class ScmApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ScmApplication.class, args);
-	}
-@Bean
+    public static void main(String[] args) {
+        SpringApplication.run(ScmApplication.class, args);
+    }
+
+    @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
